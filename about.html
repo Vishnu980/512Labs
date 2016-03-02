@@ -1,0 +1,222 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>512 Labs</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.1/material.cyan-light_blue.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #view-source {
+            position: fixed;
+            display: block;
+            right: 0;
+            bottom: 0;
+            margin-right: 40px;
+            margin-bottom: 40px;
+            z-index: 900;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+        <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">About us</span>
+                <div class="mdl-layout-spacer"></div>
+            </div>
+        </header>
+        <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
+            <header class="demo-drawer-header">
+                <img src="images/user.jpg" class="demo-avatar">
+                <div class="demo-avatar-dropdown">
+                    <span>512 Labs</span>
+                </div>
+            </header>
+            <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
+                <a class="mdl-navigation__link" href="index.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home</a>
+                <a class="mdl-navigation__link" href="lavori.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">gesture</i>Projects</a>
+                <a class="mdl-navigation__link" href="about.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">people</i>About us</a>
+                <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">mail</i>Contact us</a>
+                <div class="mdl-layout-spacer"></div>
+                <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">help_outline</i><span class="visuallyhidden">Help</span></a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content mdl-color--grey-100">
+
+            <!-- Event card -->
+            <style>
+                .labs-card.mdl-card {
+                    width: auto;
+                    height: auto;
+                    background: #7C4DFF;
+                }
+                
+                .labs-card > .mdl-card__actions {
+                    border-color: rgba(255, 255, 255, 0.2);
+                }
+                
+                .labs-card > .mdl-card__title {
+                    align-items: flex-start;
+                }
+                
+                .labs-card > .mdl-card__title > h5 {
+                    margin-top: 0;
+                }
+                
+                .labs-card > .mdl-card__actions {
+                    display: flex;
+                    box-sizing: border-box;
+                    align-items: center;
+                }
+                
+                .labs-card > .mdl-card__actions > .material-icons {
+                    padding-right: 10px;
+                }
+                
+                .labs-card > .mdl-card__title,
+                .labs-card > .mdl-card__actions,
+                .labs-card > .mdl-card__actions > .mdl-button {
+                    color: #fff;
+                }
+            </style>
+
+            <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--12-col">
+                    <div class="labs-card mdl-card mdl-shadow--2dp">
+                        <div class="mdl-card__title mdl-card--expand">
+                            <h5>Welcome to 512 Labs <br>We are 2 friends who love's Technology and Design. <br> Our Object is to deliver amazing apps with Pixel Perfect UI and UX. <br> If you want to know about the Team member give a look under here! </h5>
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+      512 Labs Team
+    </a>
+                            <div class="mdl-layout-spacer"></div>
+                            <i class="material-icons">keyboard_arrow_down</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Riccardo card -->
+            <style>
+                .riccardo-card.mdl-card {
+                    width: auto;
+                    height: 500px;
+                }
+                
+                .riccardo-card > .mdl-card__actions {
+                    height: 52px;
+                    padding: 16px;
+                    background: #69F0AE;
+                }
+                
+                .riccardo-card > .mdl-card__title {
+                    background: url('images/ic_riccardo.jpg') center / cover;
+                }
+                
+                .riccardo-card__filename {
+                    color: #fff;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            </style>
+
+            <!-- Gianluca card -->
+            <style>
+                .gianluca-card.mdl-card {
+                    width: auto;
+                    height: 500px;
+                }
+                
+                .gianluca-card > .mdl-card__actions {
+                    height: 52px;
+                    padding: 16px;
+                    background: #00E5FF;
+                }
+                
+                .gianluca-card > .mdl-card__title {
+                    background: url('images/ic_riccardo.jpg') center / cover;
+                }
+                
+                .gianluca-card__filename {
+                    color: #fff;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            </style>
+
+            <center>
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="riccardo-card mdl-card mdl-shadow--2dp">
+                            <div class="mdl-card__title mdl-card--expand"></div>
+                            <div class="mdl-card__actions">
+                                <span class="riccardo-card__filename">Riccardo Busetti</span>
+                            </div>
+                            <div class="mdl-card__supporting-text">Hello my name is Riccardo and i'm 15.
+                                <br> I love Coding/Design/Music and Films. In my freetime i Design Stuff, i Code and i go with Bicycle with friends. <b>Here at 512 Labs i'm the Lead Software Developer and Motion Designer.</b> My favourite language is Java and when i develop an app the UX and UI are in the first position for importance. And? Yes i'm the man behind the lines of code and algorithms!</div>
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="gianluca-card mdl-card mdl-shadow--2dp">
+                            <div class="mdl-card__title mdl-card--expand"></div>
+                            <div class="mdl-card__actions">
+                                <span class="gianluca-card__filename">Gianluca Astorino</span>
+                            </div>
+                            <div class="mdl-card__supporting-text">Hello my name is Gianluca and i'm 15.
+                                <br> I love Design. In my freetime i Design Icons and i play sport. <b>Here at 512 Labs i'm the Lead Designer.</b></div>
+                        </div>
+                    </div>
+                </div>
+            </center>
+        </main>
+    </div>
+    <script src="https://code.getmdl.io/1.1.1/material.min.js"></script>
+</body>
+
+</html>
